@@ -49,7 +49,7 @@ buttonElement.addEventListener('click', function () {
         sconto = sconto.toFixed(2)
         discounted_price = full_price - sconto
         console.log('Prezzo scontato ' + prezzo + '€')
-        prezzo = document.getElementById("prezzo").innerHTML = 'Prezzo finale ' + discounted_price + '€'; // stampare su html il risultato
+        prezzo = discounted_price;
     }
 
     // SE hai più di 65 anni 
@@ -60,7 +60,7 @@ buttonElement.addEventListener('click', function () {
         sconto = sconto.toFixed(2)
         discounted_price = full_price - sconto
         console.log('Prezzo scontato ' + discounted_price + '€')
-        prezzo = document.getElementById("prezzo").innerHTML = 'Prezzo finale ' + discounted_price + '€';
+        prezzo = discounted_price;
 
     }
 
@@ -70,7 +70,7 @@ buttonElement.addEventListener('click', function () {
         prezzo = full_price;
 
     }
-    prezzo = document.getElementById("prezzo").innerHTML = 'Prezzo finale ' + prezzo + '€';
+    prezzo = document.getElementById("prezzo").innerHTML = 'Prezzo finale ' + prezzo + '€'; // stampare su html il risultato
 })
 
 
