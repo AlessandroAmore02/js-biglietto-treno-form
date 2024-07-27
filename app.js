@@ -28,12 +28,12 @@ buttonElement.addEventListener('click', function (e) {
 
     // Input utente
     const kmElement = document.getElementById('km')
-    const kmValue = kmElement.value
+    const kmValue = parseFloat(kmElement.value)
     console.log(kmElement)
 
 
     const ageElement = document.getElementById('età')
-    const ageValue = ageElement.value
+    const ageValue = parseInt(ageElement.value) //number
     console.log(ageElement)
 
     // Prezzo pieno biglietto
