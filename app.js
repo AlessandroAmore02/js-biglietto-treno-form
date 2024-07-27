@@ -21,7 +21,11 @@ let sconto
 
 // else {
 const buttonElement = document.getElementById('calcola')
-buttonElement.addEventListener('click', function () {
+buttonElement.addEventListener('click', function (e) {
+
+    e.preventDefault() //non invia direttamente il form
+
+
     // Input utente
     const kmElement = document.getElementById('km')
     const kmValue = kmElement.value
